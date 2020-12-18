@@ -152,7 +152,7 @@ mutation logoRecognitionJob {
         {
           engineId: "ENGINE_ID"
           payload: { 
-            key: "1arju7us157v6cldj6u6bdd7bnhg5o8095dru7nh" 
+            key: "r3jnt9pmd3o89t6p3dsnuuicub4r20j1dvcpuqd1" 
           }        
           ioFolders: [
             { referenceId: "engineInputFolder", mode: chunk, type: input }
