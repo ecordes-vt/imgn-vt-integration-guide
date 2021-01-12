@@ -88,6 +88,7 @@ mutation facialRecognitionJob{
           engineId: "ENGINE_ID"
           payload: {
             mode: "library-run"
+            minConfidence: 0.70
             libraryId: "LIBRARY_ID"
           }        
           ioFolders: [
