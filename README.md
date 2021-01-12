@@ -54,15 +54,15 @@ Facial Recognition engineId(s):
 
  Engine Name             | engineId                             | payload name
  ----------------------- | ------------------------------------ | --------------------------
- Facebox Recognize  | e62665c7-f855-4168-8aa3-668a7b0a50ea | libraryId, libraryEngineModelId, mode
- Amazon Recognition  | df6e189f-8947-4c73-a30b-f786defc60e8 | libraryId, libraryEngineModelId, mode
- 
-NOTE: For testing purposes here is our default celebrity library to use.  You will have a custom library and model ID once it is has been built and trained.
+ Facebox Recognize  | e62665c7-f855-4168-8aa3-668a7b0a50ea | libraryId, mode
+ Amazon Recognition  | df6e189f-8947-4c73-a30b-f786defc60e8 | libraryId, mode
 
-Engine Name              | libraryId                            | libraryEngineModelId
- ----------------------- | ------------------------------------ | --------------------------
- Facebox Recognize  | 13e6f4a3-0d5c-4e11-9a30-913e981cb9ad | 5a49ed1b-7d1e-426c-8f78-bacc1d537ffe
- Amazon Recognition   | 13e6f4a3-0d5c-4e11-9a30-913e981cb9ad | fd637d9f-4168-421f-a81a-664ae7b41c5e
+
+Library Name             | libraryId                            |
+ ----------------------- | ------------------------------------ |
+Athlete                  | 2426dbe5-eef3-4167-9da8-fb1eeec61c67 |
+Politician               | 513c805f-2893-4f49-8814-b2548ef700d6 |
+Celebrity                | 13e6f4a3-0d5c-4e11-9a30-913e981cb9ad |
 
 ### Facial Recogntion template
 
@@ -89,7 +89,6 @@ mutation facialRecognitionJob{
           payload: {
             mode: "library-run"
             libraryId: "LIBRARY_ID"
-            libraryEngineModelId: "MODEL_ID"
           }        
           ioFolders: [
             { referenceId: "engineInputFolder", mode: chunk, type: input }
