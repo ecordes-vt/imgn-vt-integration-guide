@@ -17,6 +17,8 @@ Sections:
 
 [job notifications](#job-notifications)
 
+[delete tdo](#delete-tdo)
+
 ## Veritone API Flow
 
 1. `createJob` - Create a cognition job.
@@ -304,4 +306,18 @@ This example notifies you when the output is completed:
   ]
   notificationUris: ["https://example.net/hook"]
 }
+```
+
+# Delete TDO
+
+This will permanently delete the assets and engine results from a given TDO.  Use carefully!
+
+```
+mutation{
+  deleteTDO(id: "44512341")
+     {
+      id
+      message
+      }
+    }
 ```
